@@ -1,6 +1,11 @@
 const discord = require('discord.js-selfbot-v13');
-const keepAlive = require("./server.js");
-//const keepAlive = require("./server")
+//const keepAlive = require("./server");
+const moment = require('moment');
+
+moment.locale('en');
+////////////////////////////////
+require("http").createServer((_, res) => res.end("Uptime")).listen(8080); // uptimerobot for 24/7
+////////////////////////////////
 
 //login
 require('dotenv').config();
@@ -100,5 +105,5 @@ client.on("ready", () => {
    }, 10000)
    console.log(`${client.user.tag} is running on !`);
 });
-keepAlive();
+//keepAlive();
 client.login(TOKEN);

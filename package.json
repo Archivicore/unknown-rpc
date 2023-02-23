@@ -1,14 +1,7 @@
 {
-  "name": "unknown",
-  "version": "1.0.0",
-  "description": "Change your discord status to streaming without streaming",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "dependencies": {
     "discord.js-selfbot-v13": "^2.10.7",
     "dotenv": "^16.0.3",
-    "express": "^4.18.2"
+    "moment": "^2.29.4"
   }
 }
